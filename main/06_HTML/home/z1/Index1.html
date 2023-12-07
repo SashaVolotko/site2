@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<HTML> 
+    <HEAD> 
+        <META charset="utf-8"> 
+        <TITLE>Phyton</TITLE> 
+    </HEAD> 
+    <BODY style ="font-family: sans-serif; font-size: 14px;background-color: #eee;"> 
+        <style media="screen"> font-family: sans-serif; font-size: 14px; background-color: #eee; </style>
+        <style media="print"> font-family: sans-serif;font-size: 14px; background-color: #eee; </style>
+
+        <H1>HOW-TO: Программа на Python, Часть 1</H1>  
+        <img src="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\img\Icon-Python.png" alt="Python" title="Python — объектно-ориентированный язык программирования" align = "right">
+        <ul>
+            <li><a href="Index1.html">Программа на Python — часть 1</a></I></li>
+            <li><a href="index2.html">Программа на Python — часть 2</a></I></li>
+            <li><a href="index3.html">Программа на Python — часть 3</a></I></li>
+        </ul>
+        <H2 id = "soder">Содержание</H2>
+        <H3>HOW-TO: Программа на Python, Часть 1</H3>
+        <ul>
+            <li><a HREF = "#perstr">Наша первая программа</a></li>
+            <li><a HREF = "#prfor">Пример цикла For</a></li>
+        </ul>   
+        <p>Из множества существующих языков программирования Python — один из самых лёгких<br> 
+            в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.<br> 
+            Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не<br> 
+            обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим<br> 
+            создание консольных приложений, а в следующей — программирование графических<br> 
+            интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.</p>
+        <H3 id = "perstr">Наша первая программа</H3>
+        <p><a HREF = "#soder">К содержанию</a></p>
+        <p>Наберём код в текстовом редакторе (например, в <B>gedit</B>). Потом мы разберёмся, что делает 
+            каждая строка и пойдём дальше.</p>
+        <P> </P>
+        <p>Введите эти 4 строки:</p>
+            <p><CODE>#!/usr/bin/env python <br>
+            print 'Hello. I am a python program.'<br>
+            name = raw_input("What is your name?") <br>
+            print "Hello there, " + name + "!"</CODE></p> 
+        <p>Это всё. Сохраните файл как <B>hello.py</B> в любом месте. Я предлагаю сохранить его в папке 
+            <B>python_examples</B> в домашнем каталоге. Этот пример показывает, как просто написать 
+            программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для 
+            этого введите в терминале</p>
+        <p> </p>
+        <p><B>chmod +x hello.py</B></p>
+        <P> </P>
+        <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+        <p> </p>
+        <Code>greg@earth:~/python_examples$ ./hello.py<br>
+            Hello. I am a python program.<br>
+            What is your name? Ferd Burphel<br>
+            Hello there, Ferd Burphel!<br>
+            greg@earth:~/python_examples$</Code>   
+        <p> </p>
+        <p>Вот и всё.</p>
+        <p> </p>
+        <h2 id = "prfor">Пример цикла For</h2>
+        <p><a HREF = "#soder">К содержанию</a></p>
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый<br> 
+            редактор и наберите следующую программу:
+            </p>
+        <p> </p>
+        <code>#!/usr/bin/env python<br>
+            for cntr in range(0,10):<br>
+            print cntr</code>
+        <p><I>Не забудьте поставить символ табуляции перед строкой «print cntr».</I> Это важно. В<br> 
+            Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки<br>
+            как в других языках программирования, а отступы.</p>
+            <A HREF="index2.html">
+                <IMG SRC="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\img\next.png" align = "right" width="100">
+            </A>
+            <A HREF="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\home\Index1.html">
+                <center><IMG SRC="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\img\home.png" width="100"></center>
+            </A>
+    </BODY>
+</HTML> 
+
+
+        
+    
+
+

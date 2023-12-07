@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python666</title>
+    <style media="screen">
+        .window{
+        font-family: sans-serif; 
+        font-size: 14px; 
+        background-color: #eee}  
+        </style>
+        <style media="print">
+        .window{
+        font-family: sans-serif;
+        font-size:after 14px;
+        background-color: #eee}
+        </style>
+</head>
+<body>
+    <div class = "window">
+    <h1>HOW-TO: Программа на Python, Часть 3</h1>
+    <ul>
+        <li><a href="Index1.html">Программа на Python — часть 1</a></I></li>
+        <li><a href="index2.html">Программа на Python — часть 2</a></I></li>
+        <li><a href="index3.html">Программа на Python — часть 3</a></I></li>
+    </ul>
+    <h2 id = "sod3">Содержание</h2>
+    <b>HOW-TO: Программа на Python, Часть 3 
+    </b>
+    <ul>
+        <li><u><a href = "#modul">Модули</a></u></li>
+        <li><u><a href = "#Function">Функции</a></u></li>
+    </ul>
+    <hr>
+    <p>В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и <br>
+        присвоение, операторы <b>if</b> и <b>while</b>. Я обещал, что в этой части мы изучим модули и <br>
+        функции. Давайте начнём. <br>
+        </p>
+    <h2 id = "modul">Модули</h2>
+    <p><a Href = "#sod3">К содержанию</a></p>
+    <p>Модули предлагают способ расширить программирование на Python. Вы можете создать<br> 
+        свои модули, использовать те, которые поставляются с Python или которые написали <br>
+        другие. В самом Python есть сотни модулей, которые облегчают написание программ. <br>
+        Список модулей, поставляемых с Python, находится по адресу: <br>
+        <a href="http://docs.python.org/modindex.html">http://docs.python.org/modindex.html</a>. Некоторые модули предназначены для определённых <br>
+        операционных систем, но большинство из них кроссплатформенные и работают <br>
+        одинаково на <a href = "#">Linux</a>, <a href = "#">Mac</a> и <a href = "#">Microsoft Windows</a>. Для использования внешнего модуля <br>
+        необходимо импортировать его в программу. Один из модулей, поставляемых с Python, <br>
+        называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы <br>
+        используем этот модуль в нашем первом примере. <br>
+        </p>
+    <small><p style="line-height: 0.3;">#=======================================</p>
+        <p style="line-height: 0.3;"># random_example.py</p>
+        <p style="line-height: 0.3;"># Module example using the random module</p>
+        <p style="line-height: 0.3;">#=======================================</p>
+        <p style="line-height: 0.3;">import random 
+        </p>
+        <p style="line-height: 0.3;"># print 14 random integers </p>
+        <p style="line-height: 0.3;">for cntr in range(1,15):</p>
+        <p style="margin-left: 30px; line-height: 0.3;">print random.randint(1,10)</p></small>
+    <p>Давайте разберём код по строкам. Первые четыре строки — это комментарии, о которых <br>
+        мы говорили в прошлый раз. Пятая строка говорит Python, что нужно использовать <br>
+        модуль «random». Мы должны явно указать Python на это. <br>
+        </p>
+    <hr>
+    <h2 id = "Function">Фукнции</h2>
+    <p><a Href = "#sod3">К содержанию</a></p>
+    <p>Когда мы импортировали модуль random, мы использовали функцию <b>randint()</b>. Функция <br>
+        — это блок кода, который создан для того, чтобы вызывать его в программе, обычно, <br>
+        более одного раза. Это упрощает работу над программой и предотвращает набор одного и <br>
+        того же кода снова и снова. Грубо говоря, если вам нужно написать некоторый код <br>
+        больше, чем 1-2 раза, стоит сделать его функцией. Хотя следующие два примера очень <br>
+        простые, это хорошие примеры функций. Теперь мы хотим, скажем, взять два числа, <br>
+        сложить их, перемножить, вычесть одно из другого, затем вывести на экран эти числа и <br>
+        результаты одновременно. Допустим, нам нужно сделать это три раза для трёх наборов <br>
+        чисел. Тогда наш пример будет выглядеть как код ниже. <br>
+        </p>
+    <p style="line-height: 0.3;">#silly example</p>
+    <p style="line-height: 0.3;">print '%d + %d = %d ' % (1,2,1+2) </p>
+    <p style="line-height: 0.3;">print '%d * %d = %d ' % (1,2,1*2) </p>
+    <p style="line-height: 0.3;">print '%d - %d = %d ' % (1,2,1-2) 
+    </p>
+    <p></p>
+    <p style="line-height: 0.3;">print '\n'</p>
+    <p style="line-height: 0.3;">print '%d + %d = %d ' % (1,4,1+4)</p>
+    <p style="line-height: 0.3;">print '%d * %d = %d ' % (1,4,1*4)</p>
+    <p style="line-height: 0.3;">print '%d - %d = %d ' % (1,4,1-4)</p>
+    <p></p>
+    <p style="line-height: 0.3;">print '\n'</p>
+    <p style="line-height: 0.3;">print '%d + %d = %d ' % (10,5,10+5)</p>
+    <p style="line-height: 0.3;">print '%d * %d = %d ' % (10,5,10*5) </p>
+    <p style="line-height: 0.3;">print '%d - %d = %d ' % (10,5,10-5)</p>
+    <p style="line-height: 0.3;">print '\n' </p>
+    <p>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при <br>
+        написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую <br>
+        назовём <i><b>«DoTwo»</b></i>. Она будет каждый раз брать два числа, проводить математические <br>
+        операции и выводить результат. Начнём с ключевого слова <i><b>«def»</b></i>, которое сигнализирует <br>
+        о том, что мы собираемся определить функцию. После слова <i><b>«def»</b></i> добавим название <br>
+        функции и список параметров, если таковые имеются, в круглых скобках. Эту строку <br>
+        необходимо завершить двоеточием. Код функции набирается с отступом. Наш <br>
+        улучшенный простой пример (<u>№2</u>) показан ниже. <br>
+        </p>
+    <p style="line-height: 0.3;">#silly example 2...still silly, but better</p>
+    <p style="line-height: 0.3;">def DoTwo(num1,num2):</p>
+    <p style="line-height: 0.3;">print '%d + %d = %d ' % (num1,num2,num1+num2)</p>
+    <p style="line-height: 0.3;">print '%d * %d = %d ' % (num1,num2,num1*num2)</p>
+    <p style="line-height: 0.3;">print '%d - %d = %d ' % (num1,num2,num1-num2)</p>
+    <p style="line-height: 0.3;">print '\n'</p>
+    <p style="line-height: 0.3;">DoTwo(1,2)</p>
+    <p style="line-height: 0.3;">DoTwo(1,4)</p>
+    <p style="line-height: 0.3;">DoTwo(10,5)</p>
+    <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет что-<br>
+        либо поменять в функции, мы сможем сделать это, не создавая проблем для нашей <br>
+        программы. Чтобы вызвать функцию, нужно написать её имя и параметры. <br>
+        </p>
+         <A HREF="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\home\Index2.html">
+            <IMG SRC="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\img\prev.png" align = "left" width="100">
+        </A>
+        <A HREF="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\home\Index1.html">
+            <center><IMG SRC="D:\PRACTICA_VOLOTKO\SashaVolotko\04_HTML\img\home.png" width="100"></center>
+        </A>
+    </div> </body>
+</html>
